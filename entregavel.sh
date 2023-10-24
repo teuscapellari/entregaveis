@@ -48,7 +48,7 @@ function listaInfosBD (){
 
 sudo apt-get update && sudo apt-get upgrade
 
-echo -e "\033[1;32m 🅱 🅴 🅼 -🆅 🅸 🅽 🅳 🅾 \033[0m"
+echo -e "\033[1;32m Bem-Vindo \033[0m"
 echo -e "$verde Vamos iniciar a instalação do sistema BankSecure \033[0m"
 echo -e "$verde Vamos começar verificando a existência do Java na sua máquina \033[0m"
 echo -e "\033[1;33m Caso não exista uma versão do Java compatível, uma será instalada \033[0m"
@@ -62,7 +62,7 @@ if [ "$get" == "s" ];
 
 		if [  $? = 0 ]; #se retorno for igual a 0
 			then #entao,
-				echo -e "$verdeClaro ✔ 🅹 🅰 🆅 🅰  🅸 🅽 🆂 🆃 🅰 🅻 🅰 🅳 🅾 \033[0m" #print no terminal
+				echo -e "$verdeClaro ✔ Java Instalado \033[0m" #print no terminal
 				
 				baixarProj
 				
