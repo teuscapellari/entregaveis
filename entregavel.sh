@@ -24,9 +24,15 @@ function listaProcessosInfos (){
 
 		echo -e "$verde Listando os processos do computador \033[0m"
 		java -jar Listar_Processos.jar
+		
+		echo -e "$amarelo Tecle [s] para continuar \033[0m"
+		read get
+		if [ "$get" == "s" ];
+			then
+				echo -e "$verde Listando informações do computador \033[0m"
+				java -jar ListaInfo.jar
 
-		echo -e "$verde Listando informações do computador \033[0m"
-		java -jar ListaInfo.jar
+		fi
 }
 
 function listaInfosBD (){
